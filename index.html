@@ -4,97 +4,115 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>izzethaber</title>
-  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
   <style>
+    * {
+      box-sizing: border-box;
+    }
     body {
       margin: 0;
-      font-family: Arial, sans-serif;
-      background: #f9f9f9;
+      font-family: 'Inter', sans-serif;
+      background: #f5f5f5;
       color: #222;
+    }
+    header {
+      background: #111;
+      color: white;
+      padding: 20px;
+    }
+    header .logo {
+      font-size: 32px;
+      font-weight: 700;
     }
     .container {
       max-width: 1200px;
       margin: auto;
-      padding: 20px;
-      display: flex;
-      flex-wrap: wrap;
-      gap: 20px;
+      padding: 40px 20px;
+      display: grid;
+      grid-template-columns: 2fr 1fr;
+      gap: 30px;
     }
-    .main-featured {
-      flex: 2;
-      background: white;
-      padding: 20px;
-      border-radius: 10px;
+    .featured {
       display: flex;
-      gap: 20px;
-      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+      gap: 30px;
+      background: #fff;
+      border-radius: 12px;
+      overflow: hidden;
+      box-shadow: 0 3px 15px rgba(0,0,0,0.05);
+      padding: 30px;
     }
-    .main-featured .text {
+    .featured .text {
       flex: 1;
-    }
-    .main-featured img {
-      flex: 1;
-      width: 100%;
-      border-radius: 10px;
-      object-fit: cover;
-    }
-    .main-featured .category {
-      font-weight: bold;
-      color: #c0392b;
-      margin-bottom: 10px;
-    }
-    .main-featured h2 {
-      font-size: 28px;
-      margin: 10px 0;
-    }
-    .main-featured p {
-      font-size: 16px;
-      line-height: 1.5;
-    }
-    .sidebar {
-      flex: 1;
-      display: flex;
-      flex-direction: column;
-      gap: 20px;
-    }
-    .sidebar-article {
-      background: white;
-      display: flex;
-      gap: 10px;
-      padding: 10px;
-      border-radius: 10px;
-      box-shadow: 0 2px 5px rgba(0,0,0,0.05);
-    }
-    .sidebar-article img {
-      width: 100px;
-      height: 70px;
-      object-fit: cover;
-      border-radius: 6px;
-    }
-    .sidebar-article .info {
       display: flex;
       flex-direction: column;
       justify-content: center;
     }
-    .sidebar-article .info span {
-      font-size: 12px;
-      color: gray;
+    .featured .text .category {
+      color: #c0392b;
+      font-weight: 600;
+      margin-bottom: 10px;
     }
-    .sidebar-article .info h4 {
-      margin: 5px 0 0;
+    .featured .text h2 {
+      font-size: 28px;
+      margin: 0 0 15px;
+    }
+    .featured .text p {
+      font-size: 16px;
+      color: #555;
+      line-height: 1.6;
+    }
+    .featured .text span {
+      font-size: 13px;
+      color: #888;
+      margin-top: 15px;
+    }
+    .featured img {
+      width: 400px;
+      height: auto;
+      object-fit: cover;
+      border-radius: 10px;
+    }
+    .sidebar {
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+    }
+    .sidebar-item {
+      background: #fff;
+      padding: 15px;
+      display: flex;
+      gap: 15px;
+      border-radius: 10px;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+    }
+    .sidebar-item img {
+      width: 90px;
+      height: 60px;
+      border-radius: 6px;
+      object-fit: cover;
+    }
+    .sidebar-item .info {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+    .sidebar-item .info span {
+      font-size: 12px;
+      color: #999;
+    }
+    .sidebar-item .info h4 {
       font-size: 14px;
+      margin: 5px 0 0;
     }
   </style>
 </head>
 <body>
-  <header style="background: #111; color: white; padding: 20px;">
-    <div class="container" style="display: block;">
-      <h1 style="margin: 0; font-size: 32px;">izzethaber</h1>
-    </div>
+  <header>
+    <div class="logo">izzethaber</div>
   </header>
 
-  <div class="container">
-    <section class="main-featured">
+  <main class="container">
+    <section class="featured">
       <div class="text">
         <div class="category">Politics</div>
         <h2>The Role of Media in Modern Politics</h2>
@@ -105,28 +123,28 @@
     </section>
 
     <aside class="sidebar">
-      <div class="sidebar-article">
-        <img src="https://via.placeholder.com/100x70" alt="">
+      <div class="sidebar-item">
+        <img src="https://via.placeholder.com/90x60" alt="">
         <div class="info">
           <span>World • July 22, 2024</span>
           <h4>Live: Balancing Economic Growth and Environmental Protection</h4>
         </div>
       </div>
-      <div class="sidebar-article">
-        <img src="https://via.placeholder.com/100x70" alt="">
+      <div class="sidebar-item">
+        <img src="https://via.placeholder.com/90x60" alt="">
         <div class="info">
           <span>Environment • July 22, 2024</span>
           <h4>The Role of Government Policies in Environmental Protection</h4>
         </div>
       </div>
-      <div class="sidebar-article">
-        <img src="https://via.placeholder.com/100x70" alt="">
+      <div class="sidebar-item">
+        <img src="https://via.placeholder.com/90x60" alt="">
         <div class="info">
           <span>Environment • July 22, 2024</span>
           <h4>Protecting Endangered Species and Their Habitats</h4>
         </div>
       </div>
     </aside>
-  </div>
+  </main>
 </body>
 </html>

@@ -6,9 +6,7 @@
   <title>izzethaber</title>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
   <style>
-    * {
-      box-sizing: border-box;
-    }
+    * { box-sizing: border-box; }
     body {
       margin: 0;
       font-family: 'Inter', sans-serif;
@@ -23,6 +21,24 @@
     header .logo {
       font-size: 32px;
       font-weight: 700;
+    }
+    nav {
+      background: white;
+      padding: 10px 20px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+    }
+    nav ul {
+      list-style: none;
+      display: flex;
+      gap: 20px;
+      padding: 0;
+      margin: 0;
+    }
+    nav ul li a {
+      text-decoration: none;
+      color: #222;
+      font-weight: 500;
+      font-size: 15px;
     }
     .container {
       max-width: 1200px;
@@ -111,37 +127,47 @@
     <div class="logo">izzethaber</div>
   </header>
 
+  <nav>
+    <ul>
+      <li><a href="#">Gündem</a></li>
+      <li><a href="#">Orta Doğu</a></li>
+      <li><a href="#">Ekonomi</a></li>
+      <li><a href="#">Avrupa</a></li>
+      <li><a href="#">Orta Asya</a></li>
+    </ul>
+  </nav>
+
   <main class="container">
     <section class="featured">
       <div class="text">
-        <div class="category">Politics</div>
-        <h2>The Role of Media in Modern Politics</h2>
-        <p>Great design seamlessly integrates with the user experience, making the interaction smooth and intuitive. It's not just about aesthetics; it's about functionality and usability...</p>
-        <span>July 22, 2024</span>
+        <div class="category">Siyaset</div>
+        <h2>Mecliste Yeni Düzenlemeler Üzerine Tartışmalar Sürüyor</h2>
+        <p>Türkiye Büyük Millet Meclisi’nde bugün yapılan oturumda yeni ekonomi paketi ve sosyal reformlar gündeme geldi. Muhalefet ve iktidar arasında sert tartışmalar yaşandı...</p>
+        <span>9 Nisan 2025</span>
       </div>
-      <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/3b/Capitol_Building_Full_View.jpg/640px-Capitol_Building_Full_View.jpg" alt="Haber görseli">
+      <img src="https://foto.sondakika.com/haber/2024/02/19/tbmm-de-28-donem-2-yasama-yili-7-genel-kurul-16790743_7761_amp.jpg" alt="haber">
     </section>
 
     <aside class="sidebar">
       <div class="sidebar-item">
-        <img src="https://via.placeholder.com/90x60" alt="">
+        <img src="https://foto.sondakika.com/haber/2024/01/02/cumhurbaskani-erdogan-dan-yeni-yil-kutlamasi-17766792_2613_amp.jpg" alt="">
         <div class="info">
-          <span>World • July 22, 2024</span>
-          <h4>Live: Balancing Economic Growth and Environmental Protection</h4>
+          <span>Gündem • 9 Nisan 2025</span>
+          <h4>Cumhurbaşkanı Erdoğan’dan Yeni Yıl Mesajı</h4>
         </div>
       </div>
       <div class="sidebar-item">
-        <img src="https://via.placeholder.com/90x60" alt="">
+        <img src="https://foto.sondakika.com/haber/2024/03/15/deprem-bolge-haberleri-son-durum-istanbul-da-son-depremler-18912023_4447_amp.jpg" alt="">
         <div class="info">
-          <span>Environment • July 22, 2024</span>
-          <h4>The Role of Government Policies in Environmental Protection</h4>
+          <span>Gündem • 8 Nisan 2025</span>
+          <h4>İstanbul’da Son Depremler: AFAD ve Kandilli Verileri</h4>
         </div>
       </div>
       <div class="sidebar-item">
-        <img src="https://via.placeholder.com/90x60" alt="">
+        <img src="https://foto.sondakika.com/haber/2024/02/20/benzin-ve-motorine-zam-geliyor-17640812_9271_amp.jpg" alt="">
         <div class="info">
-          <span>Environment • July 22, 2024</span>
-          <h4>Protecting Endangered Species and Their Habitats</h4>
+          <span>Ekonomi • 7 Nisan 2025</span>
+          <h4>Benzin ve Motorine Zam Geliyor</h4>
         </div>
       </div>
     </aside>

@@ -5,58 +5,128 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>izzethaber</title>
   <link rel="stylesheet" href="style.css">
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: #f9f9f9;
+      color: #222;
+    }
+    .container {
+      max-width: 1200px;
+      margin: auto;
+      padding: 20px;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+    }
+    .main-featured {
+      flex: 2;
+      background: white;
+      padding: 20px;
+      border-radius: 10px;
+      display: flex;
+      gap: 20px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    }
+    .main-featured .text {
+      flex: 1;
+    }
+    .main-featured img {
+      flex: 1;
+      width: 100%;
+      border-radius: 10px;
+      object-fit: cover;
+    }
+    .main-featured .category {
+      font-weight: bold;
+      color: #c0392b;
+      margin-bottom: 10px;
+    }
+    .main-featured h2 {
+      font-size: 28px;
+      margin: 10px 0;
+    }
+    .main-featured p {
+      font-size: 16px;
+      line-height: 1.5;
+    }
+    .sidebar {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+    }
+    .sidebar-article {
+      background: white;
+      display: flex;
+      gap: 10px;
+      padding: 10px;
+      border-radius: 10px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+    }
+    .sidebar-article img {
+      width: 100px;
+      height: 70px;
+      object-fit: cover;
+      border-radius: 6px;
+    }
+    .sidebar-article .info {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+    .sidebar-article .info span {
+      font-size: 12px;
+      color: gray;
+    }
+    .sidebar-article .info h4 {
+      margin: 5px 0 0;
+      font-size: 14px;
+    }
+  </style>
 </head>
 <body>
-  <header>
-    <div class="container">
-      <h1 class="logo">izzethaber</h1>
-      <nav class="navbar">
-        <ul>
-          <li><a href="#">Gündem</a></li>
-          <li><a href="#">Orta Doğu</a></li>
-          <li><a href="#">Ekonomi</a></li>
-          <li><a href="#">Avrupa</a></li>
-          <li><a href="#">Orta Asya</a></li>
-        </ul>
-      </nav>
+  <header style="background: #111; color: white; padding: 20px;">
+    <div class="container" style="display: block;">
+      <h1 style="margin: 0; font-size: 32px;">izzethaber</h1>
     </div>
   </header>
 
-  <main class="container">
-    <section class="featured-news">
-      <article class="haber">
-        <img src="assets/images/example.jpg" alt="Haber Görseli">
-        <h2>Öne Çıkan Haber Başlığı</h2>
-        <p>Kısa haber açıklaması buraya gelecek. Detaylı içerik bağlantıya yönlendirecek.</p>
-      </article>
-    </section>
-
-    <section class="latest-news">
-      <h2>Son Haberler</h2>
-      <div class="haber-listesi">
-        <article class="haber">
-          <img src="assets/images/example2.jpg" alt="Haber 1">
-          <h3>Haber Başlığı 1</h3>
-          <p>Kısa açıklama.</p>
-        </article>
-        <article class="haber">
-          <img src="assets/images/example3.jpg" alt="Haber 2">
-          <h3>Haber Başlığı 2</h3>
-          <p>Kısa açıklama.</p>
-        </article>
-        <article class="haber">
-          <img src="assets/images/example4.jpg" alt="Haber 3">
-          <h3>Haber Başlığı 3</h3>
-          <p>Kısa açıklama.</p>
-        </article>
+  <div class="container">
+    <section class="main-featured">
+      <div class="text">
+        <div class="category">Politics</div>
+        <h2>The Role of Media in Modern Politics</h2>
+        <p>Great design seamlessly integrates with the user experience, making the interaction smooth and intuitive. It's not just about aesthetics; it's about functionality and usability...</p>
+        <span>July 22, 2024</span>
       </div>
+      <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/3b/Capitol_Building_Full_View.jpg/640px-Capitol_Building_Full_View.jpg" alt="Haber görseli">
     </section>
-  </main>
 
-  <footer>
-    <div class="container">
-      <p>&copy; 2025 izzethaber - Tüm Hakları Saklıdır.</p>
-    </div>
-  </footer>
+    <aside class="sidebar">
+      <div class="sidebar-article">
+        <img src="https://via.placeholder.com/100x70" alt="">
+        <div class="info">
+          <span>World • July 22, 2024</span>
+          <h4>Live: Balancing Economic Growth and Environmental Protection</h4>
+        </div>
+      </div>
+      <div class="sidebar-article">
+        <img src="https://via.placeholder.com/100x70" alt="">
+        <div class="info">
+          <span>Environment • July 22, 2024</span>
+          <h4>The Role of Government Policies in Environmental Protection</h4>
+        </div>
+      </div>
+      <div class="sidebar-article">
+        <img src="https://via.placeholder.com/100x70" alt="">
+        <div class="info">
+          <span>Environment • July 22, 2024</span>
+          <h4>Protecting Endangered Species and Their Habitats</h4>
+        </div>
+      </div>
+    </aside>
+  </div>
 </body>
 </html>
